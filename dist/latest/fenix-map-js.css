@@ -1008,4 +1008,5 @@ div.fm-controller-item-title {
 
 #powerTip {
     z-index:1000;
+    white-space: normal;
 }
