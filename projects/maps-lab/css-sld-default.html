@@ -130,7 +130,8 @@
                 stroke: grey;\n\
                 stroke-width: 1px;\n\
                 stroke-opacity: 0.7;\n\
-            }'
+            }';
+
     cssPanel.init({id: "style_editor", defaultText: css_text})
 
     var addLayer = function() {
@@ -142,28 +143,16 @@
         layer.srs='EPSG:3857' //TODO: the srs is foundamental to the GFI
         layer.defaultgfi=true;
         //layer.style = "ndvi"
-
-        layer.lang = "en"
-//        layer.joincolumn = "iso3"
 //
-//        layer.joindata='[{"AFG":"testtt<br>iuahsiduh"},{"ITA":"11"}]'
+//        layer.lang = "en"
+//        layer.joincolumnlabel = "areanamee"
+//        var joinlabel  = "<div class='fm-popup-join-title'>{{" + layer.joincolumnlabel +"}}</div>"
 //
-//
-        layer.joincolumnlabel = "areanamee"
-        var joinlabel  = "<div class='fm-popup-join-title'>{{" + layer.joincolumnlabel +"}}</div>"
-
-        layer.customgfi = {
-            content : {
-                en: "<div class='fm-popup'>" + joinlabel + "<div class='fm-popup-join-content'><i>{{{" + layer.joincolumn +"}}}</i></div></div>"                    },
-            ,showpopup: true
-        }
-
-    layer.customgfi = {
-        content : {
-            en: "<div class='fm-popup'>{{colonnaen}}</div>",
-            en: "<div class='fm-popup'>{{colonnafr}}</div>"
-            ,showpopup: true
-    }
+//        layer.customgfi = {
+//            content : {
+//                en: "<div class='fm-popup'>" + joinlabel + "<div class='fm-popup-join-content'><i>{{{" + layer.joincolumn +"}}}</i></div></div>"                    },
+//            ,showpopup: true
+//        }
 
 
         var l = new FM.layer(layer);

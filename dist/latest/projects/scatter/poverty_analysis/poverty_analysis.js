@@ -1,3 +1,4 @@
+/* global FM, define */
 define(['jquery',
     'mustache',
     'text!scatter/poverty_analysis/template.html',
@@ -26,7 +27,8 @@ define(['jquery',
                         legendtitle: 'Percentage &#37;',
                         mu: '&#37;',
                         formula: '(series[i].data[j].y)',
-                        colorramp : 'YlOrRd'
+                        //colorramp : 'YlOrRd'
+                        colorramp: 'YlGnBu'
                     },
                     {
                         mapID: 'map2',
@@ -101,7 +103,7 @@ define(['jquery',
             for(var i=0; i < mapsArray.length; i++) {
                 for(var j=0; j < mapsArray.length; j++) {
                     if ( i != j) {
-                        mapsArray[i].fenixMap.syncOnMove(mapsArray[j].fenixMap)
+                        mapsArray[i].fenixMap.syncOnMove(mapsArray[j].fenixMap);
                     }
                 }
             }
@@ -194,7 +196,7 @@ define(['jquery',
             layer.reclassify = false;
             var l = new FM.layer(layer);
             l.zindex = 100
-            return l
+            return l;
         }
 
         function createHighlightLayer(m) {
@@ -229,3 +231,15 @@ define(['jquery',
     };
 
 });
+
+
+
+
+
+
+
+
+
+
+
+

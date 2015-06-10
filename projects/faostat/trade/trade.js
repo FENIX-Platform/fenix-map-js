@@ -222,6 +222,7 @@ var FAOSTATTrade = (function() {
             $('#' +m.id).show();
             m.fenixmap.map.invalidateSize();
             syncMaps();
+            console.log(m.l.layer);
         }
     }
 

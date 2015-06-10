@@ -15,7 +15,8 @@
             ID_APPLY_BTN: "fm_style_apply_style_",
             ID_EXPORT_SLD_BTN: "fm_style_export_sld_",
             ID_EXPORT_CSS_BTN: "fm_style_export_css_",
-            SERVICE_CSS2SLD: 'http://fenixapps2.fao.org/geoservices/CSS2SLD' //TODO move to a configuration file
+            //SERVICE_CSS2SLD: 'http://fenixapps2.fao.org/geoservices/CSS2SLD' //TODO move to a configuration file
+            SERVICE_CSS2SLD: 'http://localhost:8092/geoservices/CSS2SLD' //TODO move to a configuration file
         };
 
         var init = function(obj) {

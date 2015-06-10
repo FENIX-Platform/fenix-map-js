@@ -31,9 +31,9 @@ layer.geometrycolumn = 'the_geom' // used to perform a spatial query on the laye
 layer.joincolumn = 'adm0_code'; Join column of the layer with the data
 layer.joinboundary= 'FAOSTAT'; (@Deprecated) [GAUL0, FAOSTAT, ISO2, ISO3] // this is an alternative if GAUL0 of the joincolum (not supported anymore)
 layer.joindata='[{"1":"0"}]' // '[{"code", "value"}]'
+layer.jointype = 'shaded'; // (default) ['shaded', 'point'] Currently the point is only supported to GAUL0 layer
 
 // Optionals
-layer.jointype = 'shaded'; // (default) ['shaded', 'point'] Currently the point is only supported to GAUL0 layer
 layer.classification='quantile'; (default) // ['quantile', 'equalinterval', 'custom', 'customequal', 'equalarea'] // equalarea classification can be used just with GAUL0
 layer.ranges='0,100,300'; // if the classification='custom' or 'customequal' this will set the thresholds
 
